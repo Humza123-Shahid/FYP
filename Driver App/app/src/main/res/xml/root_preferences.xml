@@ -1,0 +1,53 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Edit Account Info">
+
+        <EditTextPreference
+            app:key="name"
+            app:title="Edit User Name"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="email"
+            app:title="Edit Email"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            app:defaultValue="male"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="gender"
+            app:title="Edit Gender"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="pass"
+            app:title="Edit Password"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            app:key="phone"
+            app:title="Edit Phone Number"
+            app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            app:key="dob"
+            app:title="Edit Date Of Birth"
+            app:summary="Hamza"
+            app:useSimpleSummaryProvider="false"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/sync_header">
+
+        <SwitchPreferenceCompat
+            app:key="sync"
+            app:title="@string/sync_title" />
+
+        <SwitchPreferenceCompat
+            app:dependency="sync"
+            app:key="attachment"
+            app:summaryOff="@string/attachment_summary_off"
+            app:summaryOn="@string/attachment_summary_on"
+            app:title="@string/attachment_title" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

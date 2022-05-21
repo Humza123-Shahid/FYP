@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_rides"
+            android:icon="@drawable/ic_baseline_directions_car_24"
+            android:title="Shared Rides" />
+        <item
+            android:id="@+id/nav_wallet"
+            android:icon="@drawable/ic_baseline_account_balance_24"
+            android:title="Wallet" />
+        <item
+            android:id="@+id/nav_payments"
+            android:icon="@drawable/ic_baseline_payments_24"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_freerides"
+            android:icon="@drawable/ic_performance"
+            android:title="Performance" />
+        <item
+            android:id="@+id/nav_sets"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_sign"
+            android:icon="@drawable/ic_logout_svgrepo_com"
+            android:title="Sign Out" />
+    </group>
+</menu>
